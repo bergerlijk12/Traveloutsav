@@ -1,0 +1,19 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="gallery-table table-responsive"> 
+            <table class="table table-bordered">
+                
+                <tbody>
+                    <tr ng-repeat="gallery in galleries">
+                        <td style="width:500px;"><img class="tour-img" src="{{gallery.image}}" alt="{{gallery.title}}" /></td>
+                        <td>{{gallery.title}}</td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+</div> 

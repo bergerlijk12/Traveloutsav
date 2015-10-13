@@ -1,0 +1,49 @@
+<div style="height:520px;overflow:hidden;">
+    <h2 class="section-title ">Special Day Tours</h2>
+    <div class="carousel-arrows">
+        <a id="tours-prev" class="prev-arrow" style="display: block;">
+            
+        </a>
+        <a id="tours-next" class="next-arrow" style="display: block;">
+            
+        </a>
+    </div>
+
+    <div id="sm-slide" class="inlineBlock width100" style="margin-top: 37px;width:100%;">
+        <div id="sm-slide-inner">
+            <div class="menu-slider auto">
+                <ul class="bxslider" id="tourSlider" ng-load="onLoad()">
+                    <li class="liSlider" ng-repeat="tour in tours" on-last-repeat ng-cloak>
+                        <div class="column dt-sc-one-third first" id="post-630">
+                            <div class="dt-sc-event">
+                                <h5>
+                                    <a>{{tour.title}}</a>
+                                </h5>
+                                <div class="event-thumb">
+                                    <a title="Mountain Trekking">
+                                        <img width="420" height="287" alt="gallery-img2" class="attachment-events-threecol wp-post-image" src="{{tour.image}}">
+                                        <div class="image-overlay">
+                                            <span class="image-overlay-inside"></span>
+                                        </div>
+                                    </a>
+                                </div>
+                                    <p class="elipsis">{{tour.description}}</p>
+                                <div class="dt-sc-event-detail">
+                                    <div class="event-price">
+                                        <p>Starts From</p>
+                                        <span>{{tour.price}}</span>
+                                    </div>
+                                    <a class="dt-sc-button too-small" href="#/tours/{{tour.id}}">View details</a>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="gap gap-small"></div>
+</div>

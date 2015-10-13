@@ -1,0 +1,130 @@
+
+<!DOCTYPE HTML>
+<html ng-app="travelApp">
+
+<head>
+    <title>Traveler - Index 7</title>
+
+
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest" />
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+
+    <!-- GOOGLE FONTS -->
+    <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,600' rel='stylesheet' type='text/css'>
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="assets/css/lib/datepicker.css">
+    <link rel="stylesheet" href="assets/css/lib/bootstrap.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.css">
+    <link rel="stylesheet" href="assets/css/icomoon.css">
+    <link rel="stylesheet" href="assets/css/lib/jquery.bxslider.css">
+    <link rel="stylesheet" href="assets/css/admin.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/mystyles.css">
+    <script src="assets/js/lib/modernizr.js"></script>
+</head>
+
+<body ng-controller="mainController">
+
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        /*(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));*/
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        
+        <!-- Header template -->
+        <div ng-include src="'partials/header.html'"></div>
+        <!-- / Header template -->
+
+        <!-- TOP AREA -->  
+        <div class="app-content-body" ng-view>
+        </div>
+        <!-- TOP AREA -->
+
+
+        <!-- Footer template -->
+        <div ng-include src="'partials/footer.html'"></div>
+        <!-- / Footer template -->
+        
+        <div id="loadingWidget" class="row-fluid ui-corner-all" style="padding: 0 .7em;" loading-widget >
+            <div class="loadingContent">
+                <p>
+                    <img alt="Loading  Content" src="assets/img/ajax-loader.gif" class="ajax-loader" />
+                </p>
+            </div>
+        </div>
+
+        <script src="assets/js/lib/jquery.js"></script>
+        <script src="assets/js/lib/bootstrap/bootstrap-datepicker.js"></script>
+        <script src="assets/js/lib/bootstrap/bootstrap.js"></script>
+        <script src="assets/js/lib/angular/angular.min.js"></script>
+        <script src="assets/js/lib/angular/angular-resource.min.js"></script>
+        <script src="assets/js/lib/angular/angular-route.js"></script>
+        <script src="assets/js/lib/angular/ng-file-upload-shim.js"></script>
+        <script src="assets/js/lib/angular/ng-file-upload.js"></script>
+        <script src="assets/js/lib/slimmenu.js"></script>
+        <script src="assets/js/lib/bootstrap/bootstrap-datepicker.js"></script>
+        <script src="assets/js/lib/bootstrap/bootstrap-timepicker.js"></script>
+        <script src="assets/js/lib/nicescroll.js"></script>
+        <script src="assets/js/lib/dropit.js"></script>
+        <script src="assets/js/lib/ionrangeslider.js"></script>
+        <script src="assets/js/lib/icheck.js"></script>
+        <script src="assets/js/lib/owl-carousel.js"></script>
+        <script src="assets/js/lib/jquery/jquery.bxslider.js"></script>
+        <script src="assets/js/config.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/factories/TourFactory.js"></script>
+        <script src="assets/js/factories/GalleryFactory.js"></script>
+        <script src="assets/js/factories/TestimonialFactory.js"></script>
+        <script src="assets/js/factories/GalleryFactory.js"></script>
+        <script src="assets/js/factories/UserFactory.js"></script>
+        <script src="assets/js/factories/AdminFactory.js"></script>
+        <script src="assets/js/factories/UploadFactory.js"></script>
+        <script src="assets/js/factories/ContactFactory.js"></script>
+        <script src="assets/js/controllers/homeCtrl.js"></script>
+        <script src="assets/js/controllers/toursCtrl.js"></script>
+        <script src="assets/js/controllers/SpecialTourCtrl.js"></script>
+        <script src="assets/js/controllers/TourDetailsCtrl.js"></script>
+        <script src="assets/js/controllers/TestimonialsCtrl.js"></script>
+        <script src="assets/js/controllers/GalleryCtrl.js"></script>
+        <script src="assets/js/controllers/imageModalCtrl.js"></script>
+        <script src="assets/js/controllers/travelQueryCtrl.js"></script>
+        <script src="assets/js/controllers/adminTourCtrl.js"></script>
+        <script src="assets/js/controllers/AddTourCtrl.js"></script>
+        <script src="assets/js/controllers/AddGalleryCtrl.js"></script>
+        <script src="assets/js/controllers/AdminTestimonialCtrl.js"></script>
+        <script src="assets/js/controllers/adminCtrl.js"></script>
+        <script src="assets/js/controllers/adminGalleryCtrl.js"></script>
+        <script src="assets/js/controllers/ContactCtrl.js"></script>
+        <script src="assets/js/directives/SplToursDir.js"></script>
+        <script src="assets/js/directives/ToursDir.js"></script>
+        <script src="assets/js/directives/AutoCompleteDir.js"></script>
+        <script src="assets/js/directives/TestimonialsDir.js"></script>
+        <script src="assets/js/directives/GalleryDir.js"></script>
+        <script src="assets/js/directives/imageModalDir.js"></script>
+        <script src="assets/js/directives/travelQueryDir.js"></script>
+        <script src="assets/js/directives/adminTourDir.js"></script>
+        <script src="assets/js/directives/AddTourDir.js"></script>
+        <script src="assets/js/directives/AddGalleryDir.js"></script>
+        <script src="assets/js/directives/AdminTestimonialDir.js"></script>
+        <script src="assets/js/directives/adminGalleryDir.js"></script>
+        
+    </div>
+</body>
+
+</html>
+
+
+

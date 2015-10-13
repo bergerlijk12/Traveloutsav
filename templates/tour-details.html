@@ -1,0 +1,92 @@
+<div class="row">
+    <div class="col-sm-12">
+        <div class="top-bg-area show-onload">
+            <div class="bg-holder full imageBG">
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="gap gap-medium"></div>
+            <h2 class="section-title ">{{ tourDetails.title }}</h2>
+            <div class="gap">
+                <div class="row row-wrap">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-7">
+                                <img src="assets/bg/amritsar.jpg" title="" style="height: 250px;">
+                            </div>
+                            <div class="col-sm-5 tour-info">
+                                  <div><p><strong class="futura-long ft20">Duration:</strong> {{ tourDetails.duration }}</p>
+                                  <p><strong class="futura-long ft20">Location:</strong> {{ tourDetails.city }}</p>
+                                  <p class="cost"><strong class="futura-long ft20">Price:</strong> {{ tourDetails.currency}}{{ tourDetails.price }}</p>
+                                  </div><div class="clear"></div>
+                                  <div class="book-info">
+                                    <p class="fl">
+                                        <button type="submit" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#queryModal">Book Now!</button>
+                                      </p>
+                                    <p class="contact">+91-11-43334506</p>
+                                    <div class="clear"></div>
+                                  </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row row-wrap">
+                    <div class="col-sm-10 ft15 tour-intro">
+                         {{ tourDetails.description}}
+                    </div>
+                </div>
+                <div class="row row-wrap" ng-show="tourDetails.overview.length">
+                    <div class="col-sm-12 tour-detail">
+                        <h4 class="title_2nd futura-long ft20 bold">Overview </h4>
+                        <div class="tour-content ft15">
+                            <p>{{ tourDetails.overview }}</p>
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+                <div class="row row-wrap" ng-show="activities.length">
+                    <div class="col-sm-12 tour-detail">
+                        <h4 class="title_2nd futura-long ft20 bold">Activity </h4>
+                        <ul class="list1">
+                            <li ng-repeat="activity in activities">{{ activity.title }}</li>
+                        </ul>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+                <div class="row row-wrap" ng-show="notes.length">
+                    <div class="col-sm-12 tour-detail">
+                        <h4 class="title_2nd futura-long ft20 bold">Note </h4>
+                        <ul class="list1">
+                            <li ng-repeat="note in notes">{{ note.title }}</li>
+                        </ul>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+                <div class="row row-wrap">
+                    <div class="col-sm-12">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="title_2nd futura-long ft20 bold">Inclusions</h4>
+                                <ul class="list1">
+                                    <li ng-repeat="inclusion in inclusions">{{ inclusion.title }}</li>
+                                </ul>
+                            </div>
+                            <div class="col-sm-6">
+                                <h4 class="title_2nd futura-long ft20 bold">Exclusions</h4>
+                                <ul class="list2">
+                                    <li ng-repeat="exclusion in exclusions">{{ exclusion.title }}</li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </div>
+                        <div class="cl"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<travel-query></travel-query>

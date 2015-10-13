@@ -1,0 +1,178 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="jb-wizard clearfix jb-new jb-slide">
+            <div class="jb-nav-wrap clearfix jb-nav-top">
+                <ul class="jb-nav clearfix">
+                    <li class="jb-nav-step jb-li-number jb-nav-link" ng-class="{'jb-active':tab===1}" ng-click="tab = tab==1 ? a : 1">
+                        <span class="jb-nav-subtext">Title & Description</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">1</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                    <li class="jb-nav-step jb-li-number jb-nav-link" ng-class="{'jb-active':tab===2}" ng-click="tab = tab==2 ? a : 2">
+                        <span class="jb-nav-subtext">Inclusions & Exclusions</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">2</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                    <li class="jb-nav-step jb-li-number jb-nav-link" ng-class="{'jb-active':tab===3}" ng-click="tab = tab==3 ? a : 3">
+                        <span class="jb-nav-subtext">Images</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">3</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="jb-nav-on-top jb-content">
+                <div class="jb-viewport">
+                    <div class="jb-fieldwrap clearfix" style="transition: transform 1000ms ease 0s;">
+                        <div class="jb-step jb-step-0 mCustomScrollbar _mCS_1 mCS_no_scrollbar jb-step-active jb-step-front" ng-class="{'jb-step-front':tab===1}">
+                            <fieldset class="jb-step-el">
+                                <h4 class="section-title ">Title</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Title:</label>
+                                            <input type="text" placeholder="Title" ng-model="tour.title" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description:</label>
+                                            <textarea class="form-control" rows="5" ng-model="tour.description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Overview:</label>
+                                            <textarea class="form-control" rows="5" ng-model="tour.overview"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="sel1">Location:</label>
+                                            <select class="form-control" ng-model="tour.city">
+                                                <option ng:repeat="city in cities" value="{{city.id}}">{{city.city_name}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Tour Type:</label>
+                                            <select class="form-control" ng-model="tour.type">
+                                                <option ng:repeat="duration in durations" value="{{duration.id}}">{{duration.duration_title}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Duration Type:</label>
+                                            <select class="form-control" ng-model="tour.duration">
+                                                <option ng:repeat="duration in durations" value="{{duration.id}}">{{duration.duration_title}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Currency Type:</label>
+                                            <select class="form-control" ng-model="tour.currency">
+                                                <option ng:repeat="currency in currencies" value="{{currency.id}}">{{currency.currency_name}}</option>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Price:</label>
+                                            <input type="tel" placeholder="Title" ng-model="tour.price" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="jb-step jb-step-1 mCustomScrollbar _mCS_2 mCS_no_scrollbar jb-step-active" ng-class="{'jb-step-front':tab===2}">
+                            <fieldset class="jb-step-el">
+                                <h4 class="section-title ">Inclusions & Exclusions</h4>
+                                <div class="row">
+                                     <div class="col-lg-6">
+                                        <div class="table-responsive"> 
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Inclusions</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td>{{inclusion.inclusion_title}}</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>        
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="table-responsive"> 
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Esclusions</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td>{{inclusion.inclusion_title}}</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>        
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+
+                        <div class="jb-step jb-step-2 mCustomScrollbar _mCS_3 jb-step-active mCS_no_scrollbar" ng-class="{'jb-step-front':tab===3}">
+                            <fieldset class="jb-step-el">
+                                <h4 class="section-title ">Images</h4>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div ngf-drop ngf-select ng-model="files" class="drop-box" 
+ngf-drag-over-class="dragover" ngf-multiple="false" ngf-allow-dir="true"
+accept="image/*" 
+ngf-pattern="'image/*'">Drag and Drop images here or click to upload</div>
+<div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="jb-controls clearfix">
+                    <input type="submit" value="FINISH" class="btn btn-primary btn-lg" style="display: none; float: right;" ng-class="{'inline':tab===3}" ng-click="addTour(tour)">
+                    <a class="btn btn-primary btn-lg" style="display: inline; float: right;" ng-class="{'none':tab===3}" ng-click="tab=tab + 1">NEXT</a>
+                    <a class="btn btn-primary btn-lg" style="display: none;" ng-class="{'inline':tab!=1}" ng-click="tab=tab - 1">PREV</a>
+                </div>
+                <div class="gap gap-medium"></div>
+            </form>
+        </div>
+    </div>
+</div>

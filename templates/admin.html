@@ -1,0 +1,42 @@
+<!-- TOP AREA -->
+<div class="top-bg-area show-onload">
+    <div class="bg-holder full imageBG">
+        
+    </div>
+</div>
+<!-- END TOP AREA  -->
+
+<div class="container">
+    <div class="gap gap-medium"></div>
+    <div class="row">
+		<div class="col-sm-12">
+            <ul class="nav nav-tabs" id="myTab">
+                <li ng-class="{active:mainTab===1}" ng-click="mainTab = mainTab==1 ? a : 1"><a>Tours List</a></li>
+                <li ng-class="{active:mainTab===2}" ng-click="mainTab = mainTab==2 ? a : 2"><a>Add Tours</a></li>
+                <li ng-class="{active:mainTab===3}" ng-click="mainTab = mainTab==3 ? a : 3"><a>Gallery</a></li>
+                <li ng-class="{active:mainTab===4}" ng-click="mainTab = mainTab==4 ? a : 4"><a>Add Gallery</a></li>
+                <li ng-class="{active:mainTab===5}" ng-click="mainTab = mainTab==5 ? a : 5"><a>Testimonials</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane" ng-class="{'active':mainTab===1}">
+                    <div class="gap gap-medium"></div>
+                    <admin-tour></admin-tour>  
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===2}">
+                    <div class="gap gap-medium"></div>
+                    <add-tour></add-tour>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===3}">
+                    <admin-gallery></admin-gallery>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===4}">
+                    <add-gallery></add-gallery>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===5}">
+                    <admin-testimonial></admin-testimonial>
+                </div>
+            </div>    
+        </div>
+	</div> 
+</div>

@@ -1,0 +1,17 @@
+<script src="jquery-2.1.4.min.js"></script>
+
+
+<script>
+    $(document).ready(function(){
+        var a = 'this is a text with <a href="#" class="aa">anchor tag</a>';
+        console.log($('a:contains("anchor tag")').parent());
+        console.log($('.aa').parent());
+    });
+</script>
+<body>
+    <p>
+        This ai another paragraph
+    </p>
+    <p>This is a vary simple paragraph tag for findidng a text with anchor tag.this is a text with <a href="#" class="aa">anchor tag</a>
+    </p>
+</body>

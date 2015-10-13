@@ -1,0 +1,58 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="jb-wizard clearfix jb-new jb-slide">
+            
+
+            <form class="jb-nav-on-top jb-content">
+                <div class="jb-viewport" style="border:0px solid #fff;">
+                    <div class="jb-fieldwrap clearfix" style="transition: transform 1000ms ease 0s;">
+                        <div class="jb-step jb-step-0 mCustomScrollbar _mCS_1 mCS_no_scrollbar jb-step-active jb-step-front">
+                            <fieldset class="jb-step-el">
+                                <legend class="jb-step-name">Title</legend>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Title:</label>
+                                            <input type="text" placeholder="Title" ng-model="gallery.title" class="form-control">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description:</label>
+                                            <textarea class="form-control" rows="8" ng-model="gallery.description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div ngf-drop ngf-select ng-model="files" class="drop-box" 
+ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true"
+accept="image/*" 
+ngf-pattern="'image/*'" style="margin:10px 0px 0px 100px;">Drop pdfs or images here or click to upload</div>
+<div ngf-no-file-drop>File Drag/Drop is not supported for this browser</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4" ng-repeat="image in gallery.images">
+                                        <div class="form-group">
+                                            <img src="{{image.path}}" class="display" src="../assets/tour_img/bg_belowPage.png"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Caption:</label>
+                                            <input type="text" placeholder="Title" ng-model="image.caption" class="form-control">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+
+                <div class="jb-controls clearfix">
+                    <input type="submit" value="FINISH" class="btn btn-primary btn-lg" style="float: right;" ng-click="AddGallery(gallery)">
+                </div>
+                <div class="gap gap-medium"></div>
+            </form>
+        </div>
+    </div>
+</div>

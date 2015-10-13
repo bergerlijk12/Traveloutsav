@@ -1,0 +1,48 @@
+<!-- TOP AREA -->
+<div class="top-bg-area show-onload">
+    <div class="bg-holder full imageBG">
+        
+    </div>
+</div>
+<!-- END TOP AREA  -->
+
+<div class="container">
+    <div class="gap gap-medium"></div>
+    <h2 class="section-title ">Testimonials
+    </h2>
+    <div class="gap gap-medium"></div>
+    <ul class="testimonials">
+        <testimonials></testimonials>
+    </ul>
+    <div class="gap gap-medium"></div>
+</div>
+
+<div class="container" style="border-top:1px solid #cccccc;">
+    <div class="gap gap-small"></div>
+    <h5>Add Testimonials</h5>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Name:</label>
+                <input type="text" placeholder="Full Name" ng-model="testimonial.fullName" id="exampleInputPassword1" class="form-control">
+            </div>
+        </div>
+        <div class="col-md-6">
+        </div>
+    </div>
+    <div class="gap gap-small"></div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="form-group">
+                <label for="exampleInputPassword1">Testimonial:</label>
+                <textarea class="form-control" ng-model="testimonial.testimonial" rows="5" id="comment"></textarea>
+            </div>
+        </div>
+    </div>
+    <div class="gap gap-small"></div>
+    <div class="clearfix">
+        <button class="btn btn-primary btn-lg" type="submit" style="float:right;" ng-click="addTestimonial(testimonial)">Submit</button>
+    </div>
+    <div class="gap gap-medium"></div>
+</div>
+

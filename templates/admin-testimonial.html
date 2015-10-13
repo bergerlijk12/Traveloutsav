@@ -1,0 +1,18 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="gallery-table table-responsive"> 
+            <table class="table table-bordered">
+                
+                <tbody>
+                    <tr ng-repeat="testimonial in testimonials">
+                        <td style="width:150px;border-radius:150px;"><img class="testimonial-img" src="{{testimonial.image_path}}" alt="{{testimonial.image_path}}" /></td>
+                        <td>{{testimonial.testimonial}}</td>
+                        <td style="width:150px;"> 
+                            <a CLASS="pointer" ng-click="deleteTestimonial(testimonial)">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+</div> 

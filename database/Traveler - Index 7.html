@@ -1,0 +1,1451 @@
+<!DOCTYPE html>
+<html class="js touch backgroundsize csstransforms3d csstransitions ng-scope" ng-app="travelApp"><head><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+    <title>Traveler - Index 7</title>
+
+
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <meta name="keywords" content="Template, html, premium, themeforest">
+    <meta name="description" content="Traveler - Premium template for travel companies">
+    <meta name="author" content="Tsoy">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!-- GOOGLE FONTS -->
+    <link href="Traveler%20-%20Index%207_files/css.css" rel="stylesheet" type="text/css">
+    <link href="Traveler%20-%20Index%207_files/css_002.css" rel="stylesheet" type="text/css">
+    <!-- /GOOGLE FONTS -->
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/datepicker.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/bootstrap.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/font-awesome.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/icomoon.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/jquery.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/admin.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/styles.css">
+    <link rel="stylesheet" href="Traveler%20-%20Index%207_files/mystyles.css">
+    <script src="Traveler%20-%20Index%207_files/modernizr.js"></script>
+<style>.ngf-hide{display:none !important}</style></head>
+
+<body class="ng-scope" ng-controller="mainController">
+
+    <!-- FACEBOOK WIDGET -->
+    <div id="fb-root"></div>
+    <script>
+        /*(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s);
+            js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));*/
+    </script>
+    <!-- /FACEBOOK WIDGET -->
+    <div class="global-wrap">
+        
+        <!-- Header template -->
+        <!-- ngInclude:  --><div class="ng-scope" ng-include="" src="%27partials/header.html%27"><header id="main-header" class="col-lg-12 ng-scope">
+    <div class="header-top futura-long">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-7">
+                    <div class="top-user-area clearfix">
+                        <ul class="top-user-area-list list list-horizontal list-border">
+                            <li><a href="#"><i class="fa fa-envelope input-icon input-icon-highlight"></i> - dhimtrii@gmail.com</a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-phone input-icon input-icon-highlight"></i> - 9657847647</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-5 sign-in">
+                    <div class="top-user-area clearfix">
+                        <ul class="nav navbar-nav navbar-right">
+                          <li class="dropdown">
+                             <a class="dropdown-toggle ng-hide" data-toggle="dropdown" ng-show="isAdminUser()" ng-click="signOut()">Sign out</a>
+                          </li>
+                          <li class="dropdown">
+                             <a class="dropdown-toggle" data-toggle="dropdown" ng-hide="isAdminUser()">Sign in <b class="caret"></b></a>
+                             <ul class="dropdown-menu" style="padding: 15px;min-width: 250px;">
+                                <li>
+                                   <div class="row">
+                                      <div class="col-md-12">
+                                         <form class="form ng-invalid ng-dirty ng-invalid-email ng-valid-parse ng-valid-required" role="form" method="post" action="login" accept-charset="UTF-8" id="login-nav">
+                                            <div class="form-group">
+                                               <label class="sr-only" for="exampleInputEmail2">Email address</label>
+                                               <input value="dhimtrii" class="form-control ng-untouched ng-invalid ng-dirty ng-invalid-email ng-valid-required" id="exampleInputEmail2" placeholder="Email address" ng-model="user.email" required="" type="email">
+                                            </div>
+                                            <div class="form-group">
+                                               <label class="sr-only" for="exampleInputPassword2">Password</label>
+                                               <input class="form-control ng-untouched ng-dirty ng-valid-parse ng-valid ng-valid-required" id="exampleInputPassword2" placeholder="Password" ng-model="user.password" required="" type="password">
+                                            </div>
+                                            <div class="checkbox">
+                                               <label>
+                                               <input type="checkbox"> Remember me
+                                               </label>
+                                            </div>
+                                         </form>
+                                      </div>
+                                   </div>
+                                </li>
+                                <li class="divider"></li>
+                                <li>
+                                   <button type="submit" ng-click="login(user)" class="btn btn-success btn-block">Sign in</button>
+                                   
+                                </li>
+                             </ul>
+                          </li>
+                       </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container futura-long">
+        <div class="row">
+        <div class="col-xs-12 col-sm-3">
+            <a title="Trendy Travel WordPress Theme" href="http://wedesignthemes.com/themes/trendy-travel">
+                <img title="Trendy Travel WordPress Theme" alt="Trendy Travel WordPress Theme" src="Traveler%20-%20Index%207_files/logo.png" class="normal_logo" style="width:250px;">
+                <!--<img style="width:234px; height:88px;" title="Trendy Travel WordPress Theme" alt="Trendy Travel WordPress Theme" src="http://wac.BEE4.edgecastcdn.net/80BEE4/cdn-designthemes/themes/trendy-travel/wp-content/themes/trendytravel/images/logo@2x.png" class="retina_logo">-->
+            </a>
+        </div>
+        <div class="col-xs-12 col-sm-9">
+            <nav class="navbar navbar-default">
+              <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand visible-xs" href="#">MENU</a>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                  <ul class="nav navbar-nav custom-nav">
+                    <li ng-class="{ active: isActive('/') }"><a href="#/">Home <span class="sr-only">(current)</span></a></li>
+                    <li ng-class="{ active: isActive('/tours') }"><a href="#/tours">Tours</a></li>
+                    <li ng-class="{ active: isActive('/aboutus') }"><a href="#/aboutus">About</a></li>
+                    <li ng-class="{ active: isActive('/testimonials') }"><a href="#/testimonials">Testimonials</a></li>
+                    <li ng-class="{ active: isActive('/contactus') }"><a href="#/contactus">Contact</a></li>
+                    <li class="ng-hide active" ng-class="{ active: isActive('/admin') }" ng-show="isAdminUser()"><a href="#/admin">Admin</a></li>
+                    
+                  </ul>
+                </div><!-- /.navbar-collapse -->
+              </div><!-- /.container-fluid -->
+            </nav>
+            <!--<div class="nav">
+                <ul class="slimmenu" id="slimmenu">
+                    <li class="active">
+                        <a href="index.html">Home</a>                            
+                    </li>
+                    <li>
+                        <a href="feature-typography.html">About Us</a>
+                    </li>
+                    <li>
+                        <a href="hotels.html">Tours</a>
+                    </li>
+                    <li>
+                        <a href="flights.html">Contact Us</a>
+                    </li>
+                </ul>
+            </div>-->
+        </div>
+    </div>
+</div></header></div>
+        <!-- / Header template -->
+
+        <!-- TOP AREA -->  
+        <!-- ngView:  --><div class="app-content-body ng-scope" ng-view=""><!-- TOP AREA -->
+<div class="top-bg-area show-onload ng-scope">
+    <div class="bg-holder full imageBG">
+        
+    </div>
+</div>
+<!-- END TOP AREA  -->
+
+<div class="container ng-scope">
+    <div class="gap gap-medium"></div>
+    <div class="row">
+		<div class="col-sm-12">
+            <ul class="nav nav-tabs" id="myTab">
+                <li class="" ng-class="{'active':mainTab===1}" ng-click="mainTab = mainTab==1 ? a : 1"><a>Tours List</a></li>
+                <li class="" ng-class="{'active':mainTab===1}" ng-click="mainTab = mainTab==2 ? a : 2"><a>Add Tours</a></li>
+                <li class="" ng-class="{'active':mainTab===1}" ng-click="mainTab = mainTab==3 ? a : 3"><a>Gallery</a></li>
+                <li class="" ng-class="{'active':mainTab===1}" ng-click="mainTab = mainTab==4 ? a : 4"><a>Add Gallery</a></li>
+                <li class="" ng-class="{'active':mainTab===1}" ng-click="mainTab = mainTab==5 ? a : 5"><a>Testimonials</a></li>
+            </ul>
+            
+            <div class="tab-content">
+                <div class="tab-pane" ng-class="{'active':mainTab===1}">
+                    <div class="gap gap-medium"></div>
+                    <div class="row">
+    <div class="col-lg-12">
+        <div class="table-responsive"> 
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Description</th>
+                        <th style="width:140px;">Duration</th>
+                        <th style="width:100px;">Price</th>
+                        <th>Special</th>
+                        <th style="width:120px;">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Photography tour of Delhi</td>
+                        <td class="ng-binding">Delhi- The capital city 
+of India has so much to offer. It caters to all interest of the tourist 
+ and photography is something capturing the moments. Depending on the 
+number of days   we will help you organize your trip your trip and 
+insure that you don’t miss out the more   important heritages sites , 
+attractions specially  for photography</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 2000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Cooking/Culinary Tour</td>
+                        <td class="ng-binding">These Culinary tours are 
+the mixture of food walks, cooking demos, sightseeing, visit  to various
+ street food shops. Experience a walking tour of Delhi to learn about 
+the   area’s snack vendors and Spice Markets. All these activities will 
+be lead by our Team   and we will take you towards some of the oldest 
+shop producing these world famous   treats..</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 2000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Mosque Tour with TravelOutsav</td>
+                        <td class="ng-binding">There are a number of 
+Mosques in Delhi and some of the Mosque is worth visiting.  We will take
+ you towards the famous Mosques &amp;Dargah in and around Delhi</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 2500</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Same day Agra trip</td>
+                        <td class="ng-binding">A historic city situated 
+on the bank of the River Yamuna, the city has earned fame as the former 
+Mughal emperor's capital. Above all, this city houses the world renowned
+ monument “Taj Mahal”. World knows this monument as a legend of eternal 
+love of an Emperor for his favorite Queen!!! Of course world also knows 
+it among the 7 wonders of the world.</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 5000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Jaipur Guided Sightseeing Tour</td>
+                        <td class="ng-binding">known as the “Pink City” 
+which is the capital and largest city of the Indian state of Rajasthan. 
+The city was mainly founded on 18 November 1727 by Maharaja Sawai Jai 
+Singh II; who was the ruler of Amber. The city of Jaipur is truly a 
+well-planned city and is positioned in the semi-desert lands of 
+Rajasthan. The city which once had been the capital of the royal 
+maharajas is now the capital city of Rajasthan. Jaipur remind you of the
+ Rajputs and the Royal families.</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 6000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Mumbai Guided Sightseeing Tour</td>
+                        <td class="ng-binding">Renowned as the "Gateway 
+of India" - Mumbai, is a representation of what India as a country 
+stands for "Unity in Diversity", as it embraces people from all 
+cultures, religions &amp; economic backgrounds to make it big in the 
+city, more often known as the "City of Dreams". Home to one of the 
+largest film industries in the world, "Bollywood" as it’s popularly 
+known, is the hub of all things creative. Chhatrapati Shivaji Terminus 
+(CST) depicts India's Raj architecture and is spotted in the UNESCO 
+World Heritage list. Mumbai is also known as every shopper's paradise 
+and is seen in its liveliest and colourful form around Crawford Market, 
+Colaba Causeway, and Fashion Street. The crowning glory of this concrete
+ city is the refreshing Chowpatty beach. An escape from the crowds 
+includes an evening stroll along Marine Drive, or a boat trip out to 
+Elephanta Caves.</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">$ 4000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Delhi - Neemrana full day excursion</td>
+                        <td class="ng-binding">Neemrana Fort-Palace 
+became the third capital of the descendants of Prithviraj Chauhan III, 
+who had fled Delhi in 1192 after he was vanquished in battle by Muhammad
+ Gauri. Neemrana rulers, proud of lineage, continued to assert 
+themselves, even under the British, as their kingdom suffered.</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">$ 3000</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours --><tr class="ng-scope" ng-repeat="tour in tours">
+                        <td class="ng-binding">Agra Tour</td>
+                        <td class="ng-binding">Sample Agra tour</td>
+                        <td class="ng-binding">1 Day / 0 Nights</td>
+                        <td class="ng-binding">Rs. 200</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input class="btn-primary ng-pristine ng-untouched ng-valid" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)" type="checkbox"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a>Edit</a> | 
+                            <a>Delete</a>
+                        </td>
+                    </tr><!-- end ngRepeat: tour in tours -->
+                </tbody>
+            </table>
+        </div>        
+    </div>
+</div>  
+                </div>
+                <div class="tab-pane active" ng-class="{'active':mainTab===2}">
+                    <div class="gap gap-medium"></div>
+                    <div class="row">
+    <div class="col-md-12">
+        <div class="jb-wizard clearfix jb-new jb-slide">
+            <div class="jb-nav-wrap clearfix jb-nav-top">
+                <ul class="jb-nav clearfix">
+                    <li class="jb-nav-step jb-li-number jb-nav-link jb-active" ng-class="{'jb-active':tab===1}" ng-click="tab = tab==1 ? a : 1">
+                        <span class="jb-nav-subtext">Title &amp; Description</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">1</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                    <li class="jb-nav-step jb-li-number jb-nav-link" ng-class="{'jb-active':tab===2}" ng-click="tab = tab==2 ? a : 2">
+                        <span class="jb-nav-subtext">Inclusions &amp; Exclusions</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">2</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                    <li class="jb-nav-step jb-li-number jb-nav-link" ng-class="{'jb-active':tab===3}" ng-click="tab = tab==3 ? a : 3">
+                        <span class="jb-nav-subtext">Images</span>
+                        <div class="jb-nav-number">
+                            <span class="jb-nav-number-inner">3</span>
+                        </div>
+                        <div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <form class="jb-nav-on-top jb-content ng-valid ng-dirty ng-valid-parse">
+                <div class="jb-viewport">
+                    <div class="jb-fieldwrap clearfix" style="transition: transform 1000ms ease 0s;">
+                        <div class="jb-step jb-step-0 mCustomScrollbar _mCS_1 mCS_no_scrollbar jb-step-active jb-step-front" ng-class="{'jb-step-front':tab===1}">
+                            <fieldset class="jb-step-el">
+                                <legend class="jb-step-name">Title</legend>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Title:</label>
+                                            <input value="sxs" placeholder="Title" ng-model="tour.title" class="form-control ng-valid ng-dirty ng-valid-parse ng-touched" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description:</label>
+                                            <textarea class="form-control ng-pristine ng-untouched ng-valid" rows="5" ng-model="tour.description"></textarea>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Overview:</label>
+                                            <textarea class="form-control ng-pristine ng-untouched ng-valid" rows="5" ng-model="tour.overview"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="sel1">Location:</label>
+                                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="tour.city"><option selected="selected" value="? undefined:undefined ?"></option>
+                                                <!-- ngRepeat: city in cities --><option class="ng-binding ng-scope" ng:repeat="city in cities" value="1">Delhi</option><!-- end ngRepeat: city in cities --><option class="ng-binding ng-scope" ng:repeat="city in cities" value="2">Agra</option><!-- end ngRepeat: city in cities --><option class="ng-binding ng-scope" ng:repeat="city in cities" value="3">Jaipur</option><!-- end ngRepeat: city in cities --><option class="ng-binding ng-scope" ng:repeat="city in cities" value="4">Mumbai</option><!-- end ngRepeat: city in cities -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Tour Type:</label>
+                                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="tour.type"><option selected="selected" value="? undefined:undefined ?"></option>
+                                                <!-- ngRepeat: duration in durations --><option class="ng-binding ng-scope" ng:repeat="duration in durations" value="1">1 Day / 0 Nights</option><!-- end ngRepeat: duration in durations -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Duration Type:</label>
+                                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="tour.duration"><option selected="selected" value="? undefined:undefined ?"></option>
+                                                <!-- ngRepeat: duration in durations --><option class="ng-binding ng-scope" ng:repeat="duration in durations" value="1">1 Day / 0 Nights</option><!-- end ngRepeat: duration in durations -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="sel1">Currency Type:</label>
+                                            <select class="form-control ng-pristine ng-untouched ng-valid" ng-model="tour.currency"><option selected="selected" value="? undefined:undefined ?"></option>
+                                                <!-- ngRepeat: currency in currencies --><option class="ng-binding ng-scope" ng:repeat="currency in currencies" value="1">$</option><!-- end ngRepeat: currency in currencies --><option class="ng-binding ng-scope" ng:repeat="currency in currencies" value="2">Rs.</option><!-- end ngRepeat: currency in currencies -->
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Price:</label>
+                                            <input placeholder="Title" ng-model="tour.price" class="form-control ng-pristine ng-untouched ng-valid" type="tel">
+                                        </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="jb-step jb-step-1 mCustomScrollbar _mCS_2 mCS_no_scrollbar jb-step-active" ng-class="{'jb-step-front':tab===2}">
+                            <fieldset class="jb-step-el">
+                                <legend class="jb-step-name">Inclusions &amp; Exclusions</legend>
+                                <div class="row">
+                                     <div class="col-lg-6">
+                                        <div class="table-responsive"> 
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Inclusions</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Hotel Pick up and drop by A/C Chuffer driven Car</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">English speaking guide</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Street Food</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Visit to the Spice Market</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">One mineral bottled water provided during the trip</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Rikshaw Ride in Old Delhi</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Muslim English speaking guide</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Cost based upon 02 Adults travelling together</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Battery van ride to Taj Mahal</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">All applicable taxes</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Toll Taxes, parking and fuel</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Elephant ride at Amer Fort</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Lunch at neemrana fort and palace with Zipping</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Personal expenses</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Meals</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Anything which is not included in the inclusions</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Monument entry charges</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Insurance</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Personal purchases</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectInclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-inclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions -->
+                                                </tbody>
+                                            </table>
+                                        </div>        
+                                    </div>
+
+                                    <div class="col-lg-6">
+                                        <div class="table-responsive"> 
+                                            <table class="table table-bordered">
+                                                <thead>
+                                                    <tr>
+                                                        <th></th>
+                                                        <th>Esclusions</th>
+                                                        <th>Actions</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <!-- ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Hotel Pick up and drop by A/C Chuffer driven Car</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">English speaking guide</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Street Food</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Visit to the Spice Market</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">One mineral bottled water provided during the trip</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Rikshaw Ride in Old Delhi</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Muslim English speaking guide</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Cost based upon 02 Adults travelling together</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Battery van ride to Taj Mahal</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">All applicable taxes</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Toll Taxes, parking and fuel</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Elephant ride at Amer Fort</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Lunch at neemrana fort and palace with Zipping</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Personal expenses</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Meals</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Anything which is not included in the inclusions</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Monument entry charges</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Insurance</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions --><tr class="ng-scope" ng-repeat="inclusion in inclusions">
+                                                        <td><i class="fa fa-th"></i></td>
+                                                        <td class="ng-binding">Personal purchases</td>
+                                                        <td>
+                                                            <div class="checkbox auto" ng-click="selectExclusion(inclusion.id)">
+                                                                <label>
+                                                                    <i class="check-exclusion fa fa-minus-circle ft20"></i>
+                                                                </label>
+                                                            </div>
+                                                        </td>
+                                                    </tr><!-- end ngRepeat: inclusion in inclusions -->
+                                                </tbody>
+                                            </table>
+                                        </div>        
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+
+                        <div class="jb-step jb-step-2 mCustomScrollbar _mCS_3 jb-step-active mCS_no_scrollbar" ng-class="{'jb-step-front':tab===3}">
+                            <fieldset class="jb-step-el">
+                                <legend class="jb-step-name">Images</legend>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div ngf-drop="" ngf-select="" ng-model="files" class="drop-box ng-pristine ng-untouched ng-valid" ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div>
+<div style="display: none;" ngf-no-file-drop="">File Drag/Drop is not supported for this browser</div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                    </div>
+                </div>
+
+
+                <div class="jb-controls clearfix">
+                    <input value="FINISH" class="btn btn-primary btn-lg" style="display: none; float: right;" ng-class="{'inline':tab===3}" ng-click="addTour(tour)" type="submit">
+                    <a class="btn btn-primary btn-lg" style="display: inline; float: right;" ng-class="{'none':tab===3}" ng-click="tab=tab + 1">NEXT</a>
+                    <a class="btn btn-primary btn-lg" style="display: none;" ng-class="{'inline':tab!=1}" ng-click="tab=tab - 1">PREV</a>
+                </div>
+                <div class="gap gap-medium"></div>
+            </form>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===3}">
+                    <gallery-list></gallery-list>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===4}">
+                    <div class="row">
+    <div class="col-md-12">
+        <div class="jb-wizard clearfix jb-new jb-slide">
+            
+
+            <form class="jb-nav-on-top jb-content ng-pristine ng-valid">
+                <div class="jb-viewport">
+                    <div class="jb-fieldwrap clearfix" style="transition: transform 1000ms ease 0s;">
+                        <div class="jb-step jb-step-0 mCustomScrollbar _mCS_1 mCS_no_scrollbar jb-step-active jb-step-front">
+                            <fieldset class="jb-step-el">
+                                <legend class="jb-step-name">Title</legend>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Title:</label>
+                                            <input placeholder="Title" ng-model="gallery.title" class="form-control ng-pristine ng-untouched ng-valid" type="text">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="exampleInputPassword1">Description:</label>
+                                            <textarea class="form-control ng-pristine ng-untouched ng-valid" rows="5" ng-model="gallery.description"></textarea>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div ngf-drop="" ngf-select="" ng-model="files" class="drop-box ng-pristine ng-untouched ng-valid" ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'">Drop pdfs or images here or click to upload</div>
+<div ngf-no-file-drop="">File Drag/Drop is not supported for this browser</div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        
+
+                    </div>
+                </div>
+
+
+                <div class="jb-controls clearfix">
+                    <input value="FINISH" class="finish-btn jb-right jb-btn jb-btn-finish" style="display: none;" ng-click="addJob()" type="submit">
+                </div>
+                <div class="gap gap-medium"></div>
+            </form>
+        </div>
+    </div>
+</div>
+                </div>
+                <div class="tab-pane" ng-class="{'active':mainTab===5}">
+                    <testimonial-list></testimonial-list>
+                </div>
+            </div>    
+        </div>
+	</div> 
+</div></div>
+        <!-- TOP AREA -->
+
+
+        <!-- Footer template -->
+        <!-- ngInclude:  --><div class="ng-scope" ng-include="" src="%27partials/footer.html%27"><footer class="ng-scope" id="main-footer">
+    <div class="container">
+        <div class="row row-wrap">
+            <div class="col-md-3">
+                <a class="logo" href="http://127.0.0.1/">
+                    <img src="Traveler%20-%20Index%207_files/logo.png" class="logo-footer" alt="Image Alternative text" title="Image Title">
+                </a>
+                <p class="mb20">Booking, reviews and advices on hotels, resorts, flights, vacation rentals, travel packages, and lots more!</p>
+                <ul class="list list-horizontal list-space">
+                    <li>
+                        <a class="fa fa-facebook box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-twitter box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-google-plus box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-linkedin box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                    </li>
+                    <li>
+                        <a class="fa fa-pinterest box-icon-normal round animate-icon-bottom-to-top" href="#"></a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Newsletter</h4>
+                <form class="ng-pristine ng-valid">
+                    <label>Enter your E-mail Address</label>
+                    <input class="form-control" type="text">
+                    <p class="mt5"><small>*We Never Send Spam</small>
+                    </p>
+                    <input class="btn btn-primary" value="Subscribe" type="submit">
+                </form>
+            </div>
+            <div class="col-md-3">
+                <ul class="list list-footer auto" style="font-size:18px;">
+                    <li class="footer-menu"><a href="#/aboutus">About US</a>
+                    </li>
+                    <li class="footer-menu"><a href="#/contactus">Contact US</a>
+                    </li>
+                    <li class="footer-menu"><a href="#/news">Travel News</a>
+                    </li>
+                    <li class="footer-menu"><a href="#/privacy">Privacy Policy</a>
+                    </li>
+                    <li class="footer-menu"><a href="#/terms">Terms of Use</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Have Questions?</h4>
+                <h4 class="text-color">+91-9875778995</h4>
+                <h4><a href="#" class="text-color">xyz@gmail.com</a></h4>
+            </div>
+        </div>
+    </div>
+</footer></div>
+        <!-- / Footer template -->
+        
+        <div id="loadingWidget" class="row-fluid ui-corner-all" style="padding: 0px 0.7em; display: none;" loading-widget="">
+            <div class="loadingContent">
+                <p>
+                    <img alt="Loading  Content" src="Traveler%20-%20Index%207_files/ajax-loader.gif" class="ajax-loader">
+                </p>
+            </div>
+        </div>
+
+        <script src="Traveler%20-%20Index%207_files/jquery_002.js"></script>
+        <script src="Traveler%20-%20Index%207_files/bootstrap-datepicker.js"></script>
+        <script src="Traveler%20-%20Index%207_files/bootstrap.js"></script>
+        <script src="Traveler%20-%20Index%207_files/angular.js"></script>
+        <script src="Traveler%20-%20Index%207_files/angular-resource.js"></script>
+        <script src="Traveler%20-%20Index%207_files/angular-route.js"></script>
+        <script src="Traveler%20-%20Index%207_files/ng-file-upload-shim.js"></script>
+        <script src="Traveler%20-%20Index%207_files/ng-file-upload.js"></script>
+        <script src="Traveler%20-%20Index%207_files/slimmenu.js"></script>
+        <script src="Traveler%20-%20Index%207_files/bootstrap-datepicker.js"></script>
+        <script src="Traveler%20-%20Index%207_files/bootstrap-timepicker.js"></script>
+        <script src="Traveler%20-%20Index%207_files/nicescroll.js"></script>
+        <script src="Traveler%20-%20Index%207_files/dropit.js"></script>
+        <script src="Traveler%20-%20Index%207_files/ionrangeslider.js"></script>
+        <script src="Traveler%20-%20Index%207_files/icheck.js"></script>
+        <script src="Traveler%20-%20Index%207_files/owl-carousel.js"></script>
+        <script src="Traveler%20-%20Index%207_files/jquery.js"></script>
+        <script src="Traveler%20-%20Index%207_files/config.js"></script>
+        <script src="Traveler%20-%20Index%207_files/app.js"></script>
+        <script src="Traveler%20-%20Index%207_files/TourFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/GalleryFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/TestimonialFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/GalleryFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/UserFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AdminFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/UploadFactory.js"></script>
+        <script src="Traveler%20-%20Index%207_files/homeCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/toursCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/SpecialTourCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/TourDetailsCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/TestimonialsCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/GalleryCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/imageModalCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/travelQueryCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/adminTourCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AddTourCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AddGalleryCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AdminTestimonialCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/adminCtrl.js"></script>
+        <script src="Traveler%20-%20Index%207_files/SplToursDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/ToursDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AutoCompleteDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/TestimonialsDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/GalleryDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/imageModalDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/travelQueryDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/adminTourDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AddTourDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AddGalleryDir.js"></script>
+        <script src="Traveler%20-%20Index%207_files/AdminTestimonialDir.js"></script>
+        
+    </div>
+
+
+
+
+
+
+<input multiple="multiple" tabindex="-1" style="visibility: hidden; position: absolute; overflow: hidden; width: 0px; height: 0px; border: medium none; margin: 0px; padding: 0px;" ngf-drop="" ngf-select="" ng-model="files" ngf-drag-over-class="dragover" ngf-multiple="true" ngf-allow-dir="true" accept="image/*,application/pdf" ngf-pattern="'image/*,application/pdf'" type="file"></body></html>

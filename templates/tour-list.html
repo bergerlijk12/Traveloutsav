@@ -1,0 +1,24 @@
+
+    <div class="gap">
+        <div class="row row-wrap">
+            <div class="col-md-4" ng-repeat="tour in tours | filter: query ">
+                <div class="thumb dt-sc-event">
+                    <header class="thumb-header">
+                        <a class="hover-img curved" href="#">
+                            <img src="{{ tour.image}}" alt="Image Alternative text" title="people on the beach" />
+                        </a>
+                    </header>
+                    <h5 class=" ft20 bold futura-long">{{tour.title}}</h5>
+                    <p class="elipsis">{{tour.description}}</p>
+                    <div class="dt-sc-event-detail">
+                        <div class="event-price">
+                            <p>Starts From</p>
+                            <span>{{tour.price}}</span>
+                        </div>
+                        <a class="dt-sc-button too-small" data="{{tour.id}}" ng-click="ViewDetail($event)">View details</a>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>

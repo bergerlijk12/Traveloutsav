@@ -1,0 +1,304 @@
+<div class="top-area show-onload">
+    <div class="bg-holder full">
+        <div class="bg-front full-height bg-front-mob-rel">
+            <div class="container full-height">
+                <div class="rel full-height">
+                    <div class="tagline visible-lg" id="tagline">
+                        <span>It's time to</span>
+                        <ul>
+                            <li>relax</li>
+                            <li>play</li>
+                            <li class="active">discover</li>
+                            <li>find new friends</li>
+                            <li>have fun</li>
+                            <li>explore</li>
+                            <li>go</li>
+                            <li>live</li>
+                            <li>meet</li>
+                            <li>run away</li>
+                            <li>being lost</li>
+                        </ul>
+                    </div>
+                    <div class="search-tabs search-tabs-bg search-tabs-bottom mb50">
+                        <div class="tabbable">
+                            <ul class="nav nav-tabs" id="myTab">
+                                <li class="active">
+                                    <a data-toggle="tab"><i class="fa fa-building-o"></i> <span >Tours</span></a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane fade in active" id="tab-1">
+                                    <h2>Search and Save on Tours</h2>
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="form-group form-group-lg form-group-icon-left">
+                                                    <i class="fa fa-map-marker input-icon"></i>
+                                                    <label>Where are you going?</label>
+                                                    <input class="form-control" type="text" id="searchBox" autocomplete="off" ng-model="input" placeholder="City or State" typeahead="countries" typeahead-callback="callback" autocomplete="off" />
+                                                </div>
+                                            </div>
+                                            <div class="col-md-8">
+                                                <div class="input-daterange" data-date-format="M d, D">
+                                                    <div class="row">
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-icon-left">
+                                                                <i class="fa fa-calendar input-icon input-icon-highlight"></i>
+                                                                <label>Tentative Date</label>
+                                                                <input class="form-control date" placeholder="Date" name="start" type="text" />
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Duration</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                    <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-md-3">
+                                                            <div class="form-group form-group-lg form-group-select-plus">
+                                                                <label>Guests</label>
+                                                                <div class="btn-group btn-group-select-num" data-toggle="buttons">
+                                                                    <label class="btn btn-primary active">
+                                                                    <input type="radio" name="options" />1</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />2</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />3</label>
+                                                                    <label class="btn btn-primary">
+                                                                    <input type="radio" name="options" />3+</label>
+                                                                </div>
+                                                                <select class="form-control hidden">
+                                                                    <option>1</option>
+                                                                    <option>2</option>
+                                                                    <option>3</option>
+                                                                    <option selected="selected">4</option>
+                                                                    <option>5</option>
+                                                                    <option>6</option>
+                                                                    <option>7</option>
+                                                                    <option>8</option>
+                                                                    <option>9</option>
+                                                                    <option>10</option>
+                                                                    <option>11</option>
+                                                                    <option>12</option>
+                                                                    <option>13</option>
+                                                                    <option>14</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <button class="btn btn-primary btn-lg" type="submit" ng-click="SearchTour()">Search for Tours</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="owl-carousel owl-slider owl-carousel-area visible-lg" id="owl-carousel-slider" data-nav="false">
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/bg/bg1.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/bg/bg2.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/amritsar.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/turtle-in-the-deep-sea-37.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/waterfalls-04.jpeg );"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/dscf5187.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/goa01-big.jpg);"></div>
+            </div>
+            <div class="bg-holder full">
+                <div class="bg-mask"></div>
+                <div class="bg-img" style="background-image:url(assets/img/bg/crows-lake-sikkim.jpg);"></div>
+            </div>
+        </div>
+        <div class="bg-img hidden-lg" style="background-image:url(assets/img/196_365_2048x1365.jpg);"></div>
+        <div class="bg-mask hidden-lg"></div>
+    </div>
+</div>
+<!-- END TOP AREA  -->
+
+<div class="gap"></div>
+           
+<div class="container">
+    <div special-tour="loadSlider"></div> 
+</div>
+
+<div class="gap gap-medium"></div>
+
+<div class="container" style="width:100%; background:rgb(50, 50, 50) none repeat scroll 0 0;">
+    <div class="gap gap-medium"></div>
+    <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+            <div class="row row-wrap" data-gutter="120">
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <header class="thumb-header"><i class="fa fa-briefcase box-icon-black round box-icon-big animate-icon-top-to-bottom"></i>
+                            </header>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="thumb-caption">
+                                <h5 class="thumb-title"><a class="text-white" href="#">Combine & Save</a></h5>
+                                <p class="thumb-desc">Faucibus tristique felis potenti ultrices ornare rhoncus semper hac facilisi</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <header class="thumb-header"><i class="fa fa-dollar box-icon-black round box-icon-big animate-icon-top-to-bottom"></i>
+                            </header>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="thumb-caption">
+                                <h5 class="thumb-title"><a class="text-white" href="#">Best Price Guarantee</a></h5>
+                                <p class="thumb-desc">Rutrum tellus lorem sem velit nisi non pharetra in dui</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <header class="thumb-header"><i class="fa fa-lock box-icon-black round box-icon-big animate-icon-top-to-bottom"></i>
+                            </header>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="thumb-caption">
+                                <h5 class="thumb-title"><a class="text-white" href="#">Trust & Safety</a></h5>
+                                <p class="thumb-desc">Nostra sodales pharetra lacus sit sapien tristique luctus class magnis</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gap gap-small"></div>
+</div>
+
+<div class="gap gap-medium"></div>
+            
+<div class="container">
+    <div class="gap gap-medium"></div>
+    <h2 class="section-title ">Other Day tours</h2>
+    <div tour-list></div>
+</div>
+
+<div class="gap gap-medium"></div>
+    
+<div class="bg-holder">
+    <div class="bg-mask"></div>
+    <div class="bg-img" style="background-image:url(assets/img/hotel_porto_bay_liberdade_2048x1293.jpg);"></div>
+    <div class="bg-content">
+        <div class="container">
+            <div class="gap gap-big text-center text-white">
+                <h2 class="text-uc mb20">Last Minute Deal</h2>
+                <ul class="icon-list list-inline-block mb0 last-minute-rating">
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                    <li><i class="fa fa-star"></i></li>
+                </ul>
+                <h5 class="last-minute-title">Goa Marriott Resort & Spa - Goa</h5>
+                <p class="last-minute-date">Fri 14 Mar - Sun 16 Mar</p>
+                <p class="mb20"><b>Rs. 10000</b> / room</p><a class="btn btn-lg btn-white btn-ghost" href="#">Book Now <i class="fa fa-angle-right"></i></a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap gap-medium"></div>
+
+<div class="container">
+    <h2 class="section-title aligncenter">Our Client’s Words</h2>
+    <div id="sm-slide" class="inlineBlock width100" style="margin-top: 37px;width:100%;">
+        <div class="testimonial-arrows">	
+            <a id="testimonial-prev" class="prev-arrow" style="display: block;">
+            </a>	            
+            <a id="testimonial-next" class="next-arrow" style="display: block;">
+            </a>
+        </div>
+        <div id="sm-slide-inner">
+            <div class="menu-slider auto">
+                <ul class="bxslider" id="reviewSlider">
+                    <testimonials></testimonials>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="gap gap-medium"></div>
+
+<div class="container">
+    <h2 class="section-title ">Gallery</h2>
+    <div class="carousel-arrows">
+        <a id="gal-prev" class="prev-arrow" style="display: block;">
+            
+        </a>
+        <a id="gal-next" class="next-arrow" style="display: block;">
+            
+        </a>
+    </div>
+    <div id="sm-slide" class="inlineBlock width100" style="margin-top: 37px;width:100%;">
+        <div id="sm-slide-inner">
+            <div class="menu-slider auto">
+                <ul class="bxslider" id="gallerySlider">
+                    <galleries></galleries>               
+                </ul>              
+            </div>          
+        </div>              
+    </div>                
+</div>
+
+
+<image-modal></image-modal>

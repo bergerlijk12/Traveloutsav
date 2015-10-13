@@ -1,0 +1,26 @@
+<div class="row">
+    <div class="col-lg-12">
+        <div class="tour-table table-responsive"> 
+            <table class="table table-bordered">
+                
+                <tbody>
+                    <tr ng-repeat="tour in tours">
+                        <td style="width:240px;"><img class="tour-img" src="{{tour.image}}" alt="{{tour.title}}" /></td>
+                        <td>{{tour.title}}</td>
+                        <td>{{tour.duration_title}}</td>
+                        <td>{{tour.currency_name}} {{tour.price}}</td>
+                        <td>
+                            <div class="checkbox auto">
+                              <label><input type="checkbox" class="btn-primary" ng-model="tour.is_special" ng-change="onChange(tour.id)" ng-checked="checkBox(tour.is_special)"></label>
+                            </div> 
+                        </td>
+                        <td>
+                            <a ng-click="EditTour(tour)">Edit</a> | 
+                            <a ng-click="DeleteTour(tour)">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>        
+    </div>
+</div> 

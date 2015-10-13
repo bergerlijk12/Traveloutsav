@@ -1,0 +1,45 @@
+<li ng-repeat="gallery in galleries">
+    <div class="row" data-toggle="modal" data-target="#myModal">
+        <div class="dt-sc-testimonial col-md-6">
+            <div class="entry-place-thumb">
+                <div class="thumb-inner">
+                                    
+                    <a title="Fern Hills River">
+                                        
+                        <img width="572" height="391" title="Fern Hills River" alt="place1" class="attachment-best-place wp-post-image" src="{{gallery.image}}">
+                                        
+                        <div class="image-overlay">
+                                            
+                            <span class="image-overlay-inside"></span>
+                                        
+                        </div>
+                                    
+                    </a>
+                </div>
+                <a class="dt-sc-button too-small">View Gallery</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="entry-place-detail">
+                <div class="entry-place-title">
+                    <div class="float-left">
+                        <h5>
+                            <a>{{gallery.title}}</a>
+                        </h5>
+                        <p>Riverhead, NY</p>
+                    </div>
+                    <div class="star-rating-wrapper float-right">
+                        <div class="star-rating">
+                            <span style="width:0%"></span>
+                        </div>
+                        (0 Ratings)
+                    </div>
+                </div>
+                <h6>Why it is best?</h6>
+                <p>Aliquam bibendum ante ut dui auctor ultricies. Vestibulum ac commodo lorem. Nulla aliquet libero porta laoreet elementum. Pellentesque nec...</p>
+                <div class="dt-sc-hr-invisible-small">
+                </div>
+            </div>
+        </div>
+    </div>
+</li>

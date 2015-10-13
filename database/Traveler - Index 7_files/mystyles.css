@@ -1,0 +1,547 @@
+/*YOUR CUSTOM STYLES*/
+@font-face {
+  font-family: "futura-long";
+  src: url("../fonts/FuturaLightBT.ttf") format("truetype");
+}
+
+.futura-long{
+    font-family: "futura-long";
+}
+
+.ft15{
+    font-size: 15px;
+}
+
+.ft20{
+    font-size: 20px;
+}
+
+.bold{
+    font-weight: bold;
+}
+
+.tour-pack-option .dt-sc-button, .search-container input[type="submit"], .megamenu-child-container .tribe-events-event-cost, .section-title::before, .section-title1::before {
+    background: #fade03 none repeat scroll 0 0;
+}
+.section-title::before {
+    bottom: -1px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 74px;
+}
+h2.section-title, h2.section-title1 {
+    font-size: 24px;
+}
+.section-title, .section-title1 {
+    color: #000;
+    font-weight: 300;
+    margin-bottom: 45px;
+}
+.section-title {
+    border-bottom: 1px solid #f9f9f9;
+    display: block;
+    padding: 0 0 12px;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.dt-sc-event, .dt-sc-event .dt-sc-event-detail {
+    border-color: #eceeeb;
+}
+.dt-sc-event .dt-sc-event-detail {
+    border-top: 1px solid;
+    float: left;
+    margin-top: 10px;
+    padding: 20px 20px 20px 0px;
+    text-align: left;
+    width: 100%;
+}
+
+.dt-sc-event .dt-sc-event-detail .event-price {
+    float: left;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.dt-sc-event img {
+    height: 200px;
+    margin-bottom: 50px;
+}
+
+.dt-sc-event .dt-sc-event-detail .event-price p {
+    color: #2c3e50;
+    float: left;
+    line-height: 40px;
+    margin-bottom: 0;
+}
+
+.dt-sc-event .dt-sc-event-detail .event-price span {
+    color: #6dc82b;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 37px;
+    margin-left: 10px;
+}
+
+.dt-sc-event .dt-sc-event-detail .dt-sc-button {
+    float: right;
+    margin-top: 3px;
+}
+.dt-sc-button.too-small {
+    font-size: 13px;
+    padding: 7px 13px;
+    background: #6dc82b;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.dt-sc-testimonial{
+    min-height: 130px;
+}
+
+.dt-sc-testimonial .author img {
+    border-radius: 130px;
+    max-width: 130px;
+}
+
+.auto{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.section-title::before {
+    bottom: -1px;
+    content: "";
+    height: 4px;
+    position: absolute;
+    width: 74px;
+}
+
+.section-title1.aligncenter::before, .section-title.aligncenter::before {
+    left: 0;
+    margin: auto;
+    right: 0;
+}
+
+.aligncenter, img.aligncenter {
+    clear: both;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.entry-place-title {
+    border-bottom: 1px solid #e4e8ea;
+    display: inline-block;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 100%;
+}
+
+.entry-place-title p {
+    color: #bdbdbd;
+}
+
+.star-rating-wrapper {
+    color: #bdbdbd;
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.star-rating::before {
+    color: #f9ac25;
+    content: "";
+    float: left;
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.star-rating-wrapper .star-rating {
+    float: none;
+    height: 2em;
+    line-height: 2em;
+    margin-right: 5px;
+}
+.star-rating {
+    color: #bdbdbd;
+    float: right;
+    font-family: FontAwesome;
+    font-size: 13px;
+    height: 1em;
+    line-height: 1em;
+    overflow: hidden;
+    position: relative;
+    width: 4.9em;
+}
+
+.stars a, .stars a::after, .stars a.active::after, .star-rating span::before {
+    color: #f9ac25;
+}
+.star-rating span::before {
+    content: "\f006\f006\f006\f006\f006";
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+.star-rating span {
+    float: left;
+    left: 0;
+    overflow: hidden;
+    padding-top: 1.5em;
+    position: absolute;
+    top: 0;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.carousel-arrows {
+    position: absolute;
+    right: 65px;
+    z-index: 999999;
+    margin-top: -100px;
+}
+
+.carousel-arrows a {
+    color: #fff;
+    display: inline-block;
+    float: left;
+    font-size: 27px;
+    height: 40px;
+    line-height: 37px;
+    text-align: center;
+    width: 40px;
+    background: #087dc2 none repeat scroll 0 0;
+}
+
+.testimonial-arrows {
+    position: absolute;
+    z-index: 999999;
+    margin-top: 100px;
+    width: 100%;
+    left: 0px;
+}
+.testimonial-prev {
+    background-position: left top;
+    left: 20px;
+}
+.testimonial-next {
+    background-position: right top !important;
+    right: 20px;
+}
+.testimonial-prev, .testimonial-next {
+    transition: none 0s ease 0s ;
+}
+.testimonial-prev, .testimonial-next {
+    background: rgba(0, 0, 0, 0) url("../img/carousel-arrows.png") no-repeat scroll 0 0;
+    height: 68px;
+    position: absolute;
+    text-align: center;
+    margin-top: -60px;
+    width: 35px;
+}
+.testimonial-text{
+    margin-top: 25px;
+}
+
+.bx-wrapper .bx-viewport{
+    box-shadow: none;
+}
+
+.imageBG{
+    background-image: url(../img/bg/waterfalls-04.jpeg);
+}
+
+
+
+/************Tour details**************/
+.tour-info {
+    color: #222;
+    float: right;
+    height: 250px;
+    padding: 0px 25px;
+    position: relative;
+}
+
+.search-filter {
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+.elipsis {
+   overflow: hidden;
+   text-overflow: ellipsis;
+   display: -webkit-box;
+   line-height: 20px;     /* fallback */
+   max-height: 60px;      /* fallback */
+   -webkit-line-clamp: 3; /* number of lines to show */
+   -webkit-box-orient: vertical;
+}
+
+.tour-info .cost {
+    color: #208de9;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.tour-info .book-info {
+    bottom: 30px;
+}
+
+.tour-info .contact {
+    color: #3389d7;
+    float: left;
+    font-weight: bold;
+    line-height: 100%;
+    margin-left: 30px;
+    margin-top: 20px;
+    padding-left: 20px;
+}
+
+.fl{
+    float: left;
+}
+
+.tour-intro {
+    border-left: 4px solid #eaeaea;
+    color: #666666;
+    font-family: Georgia,"Times New Roman",Times,serif;
+    font-size: 16px;
+    font-style: italic;
+    line-height: 24px;
+    margin-top: 30px;
+    padding: 20px 0 20px 40px;
+}
+
+.tour-detail {
+    font-size: 14px;
+    line-height: 22px;
+    margin-top: 30px;
+}
+
+.tour-detail .tour-content {
+    margin-bottom: 20px;
+}
+
+ul.list1, ul.list2 {
+    padding-left: 35px;
+}
+
+ul.list1 li, ul.list2 li {
+    padding-bottom: 10px;
+    padding-left: 18px;
+}
+
+
+.nav .open > a, .nav .open > a:hover, .nav .open > a:focus{
+    background: transparent;
+}
+
+.nav > li > a:hover,
+.nav > li > a:focus {
+  background-color: transparent;
+}
+
+
+.app-aside {
+    float:left
+}
+
+.app-aside:before {
+    position:absolute;
+    top:0;
+    bottom:0;
+    z-index:-1;
+    width:inherit;
+    background-color:inherit;
+    border:inherit;
+    content:""
+}
+
+.app-aside-footer {
+    position:absolute;
+    bottom:0;
+    z-index:1000;
+    width:100%;
+    max-width:200px
+}
+
+.app-aside-folded .app-aside-footer {
+    max-width:60px
+}
+
+.app-aside-footer~div {
+    padding-bottom:50px
+}
+
+.app-aside-right {
+    padding-bottom:50px
+}
+
+.logo-footer{
+    height: 60px;
+}
+
+
+
+
+
+
+.mini-submenu{
+  display:none;  
+  background-color: rgba(0, 0, 0, 0);  
+  border: 1px solid rgba(0, 0, 0, 0.9);
+  border-radius: 4px;
+  padding: 9px;  
+  /*position: relative;*/
+  width: 42px;
+
+}
+
+.mini-submenu:hover{
+  cursor: pointer;
+}
+
+.mini-submenu .icon-bar {
+  border-radius: 1px;
+  display: block;
+  height: 2px;
+  width: 22px;
+  margin-top: 3px;
+}
+
+.mini-submenu .icon-bar {
+  background-color: #000;
+}
+
+#slide-submenu{
+  background: rgba(0, 0, 0, 0.45);
+  display: inline-block;
+  padding: 0 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+.testimonials li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.testimonials .dt-sc-testimonial {
+    min-height: 130px !important;
+}
+
+.testimonials .dt-sc-testimonial .author img{
+    border-radius: 75px !important;
+    max-width: 75px !important;
+}
+
+
+.modal-content{
+    height: 400px;
+}
+
+
+#myCarousel{
+    height: 350px;
+}
+
+
+.liSlider{
+    float: left;
+    list-style: outside none none;
+    margin-right: 50px;
+    position: relative;
+    width: 350px;
+}
+
+.tl-list:nth-child(even) .pic, .tl-list:nth-child(even) .text{
+    float: right;
+}
+
+.footer-menu{
+    padding: 7px 0px;
+}
+
+.list-footer{
+    margin: 0px auto;
+    padding: 0px 40px; 
+}
+
+.dl-horizontal dt{
+    font-size: 18px;
+    font-family: "futura-long";
+    width: 80px;
+}
+
+.dl-horizontal dd{
+    font-size: 17px;
+    margin-left: 80px;
+}
+
+#queryModal .form-group{
+    padding: 0px 12px;
+}
+
+.block{
+    display:block;
+}
+
+.navbar-nav > li > a {
+    padding-bottom: 12px;
+    padding-top: 10px;
+}
+
+
+#loadingWidget {
+   position: fixed;
+   top: 0;
+   right: 0;
+   bottom: 0;
+   left: 0;
+   z-index: 1100;
+   background-color: white;
+   opacity: .6;
+}
+
+.ajax-loader {
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   margin-left: -32px; /* -1 * image width / 2 */
+   margin-top: -32px; /* -1 * image height / 2 */
+   display: block;
+    width: 50px;
+}
+
+.button {
+    -moz-appearance: button;
+    /* Firefox */
+    -webkit-appearance: button;
+    /* Safari and Chrome */
+    padding: 10px;
+    margin: 10px;
+    width: 70px;
+}
+.drop-box {
+    background: #F8F8F8;
+    border: 5px dashed #DDD;
+    width: 350px;
+    height: 300px;
+    text-align: center;
+    padding-top: 25px;
+    margin: 10px;
+    line-height: 200px;
+}
+.dragover {
+    border: 5px dashed blue;
+}

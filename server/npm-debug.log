@@ -1,0 +1,104 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'multer',
+1 verbose cli   '^0.1.8',
+1 verbose cli   '--save' ]
+2 info using npm@2.3.0
+3 info using node@v0.10.13
+4 warn package.json server@1.0.0 No repository field.
+5 warn package.json server@1.0.0 No README data
+6 warn package.json multipart@0.1.5 No repository field.
+7 warn package.json multipart@0.1.5 No README data
+8 warn package.json path@0.12.7 path is also the name of a node core module.
+9 warn package.json sys@0.0.1 No repository field.
+10 silly cache add args [ 'multer@^1.0.6', null ]
+11 verbose cache add spec multer@^1.0.6
+12 silly cache add args [ '^0.1.8', null ]
+13 verbose cache add spec ^0.1.8
+14 silly cache add parsed spec { raw: 'multer@^1.0.6',
+14 silly cache add   scope: null,
+14 silly cache add   name: 'multer',
+14 silly cache add   rawSpec: '^1.0.6',
+14 silly cache add   spec: '>=1.0.6 <2.0.0',
+14 silly cache add   type: 'range' }
+15 verbose addNamed multer@>=1.0.6 <2.0.0
+16 silly addNamed semver.valid null
+17 silly addNamed semver.validRange >=1.0.6 <2.0.0
+18 silly addNameRange { name: 'multer', range: '>=1.0.6 <2.0.0', hasData: false }
+19 silly mapToRegistry name multer
+20 silly mapToRegistry using default registry
+21 silly mapToRegistry registry https://registry.npmjs.org/
+22 silly mapToRegistry uri https://registry.npmjs.org/multer
+23 verbose addNameRange registry:https://registry.npmjs.org/multer not in flight; fetching
+24 silly cache add parsed spec { raw: '^0.1.8',
+24 silly cache add   scope: null,
+24 silly cache add   name: null,
+24 silly cache add   rawSpec: '^0.1.8',
+24 silly cache add   spec: '/Applications/XAMPP/xamppfiles/htdocs/website/server/^0.1.8',
+24 silly cache add   type: 'local' }
+25 error addLocal Could not install /Applications/XAMPP/xamppfiles/htdocs/website/server/^0.1.8
+26 verbose request uri https://registry.npmjs.org/multer
+27 verbose request no auth needed
+28 info attempt registry request try #1 at 20:20:07
+29 verbose request id 30d1836b1e4b3a34
+30 verbose etag "CFHK8M94UM9S43P2FJJJKJKL1"
+31 http request GET https://registry.npmjs.org/multer
+32 http 304 https://registry.npmjs.org/multer
+33 silly get cb [ 304,
+33 silly get   { date: 'Tue, 13 Oct 2015 14:49:44 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     'cache-control': 'max-age=60',
+33 silly get     etag: '"CFHK8M94UM9S43P2FJJJKJKL1"',
+33 silly get     age: '0',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-sin6922-SIN',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '1',
+33 silly get     'x-timer': 'S1444747784.227626,VS0,VE806',
+33 silly get     vary: 'Accept' } ]
+34 verbose etag https://registry.npmjs.org/multer from cache
+35 silly addNameRange number 2 { name: 'multer', range: '>=1.0.6 <2.0.0', hasData: true }
+36 silly addNameRange versions [ 'multer',
+36 silly addNameRange   [ '0.0.1',
+36 silly addNameRange     '0.0.2',
+36 silly addNameRange     '0.0.3',
+36 silly addNameRange     '0.0.4',
+36 silly addNameRange     '0.0.5',
+36 silly addNameRange     '0.0.6',
+36 silly addNameRange     '0.0.7',
+36 silly addNameRange     '0.1.0',
+36 silly addNameRange     '0.1.1',
+36 silly addNameRange     '0.1.2',
+36 silly addNameRange     '0.1.3',
+36 silly addNameRange     '0.1.4',
+36 silly addNameRange     '0.1.6',
+36 silly addNameRange     '0.1.7',
+36 silly addNameRange     '0.1.8',
+36 silly addNameRange     '1.0.0',
+36 silly addNameRange     '1.0.1',
+36 silly addNameRange     '1.0.2',
+36 silly addNameRange     '1.0.3',
+36 silly addNameRange     '1.0.4',
+36 silly addNameRange     '1.0.5',
+36 silly addNameRange     '1.0.6' ] ]
+37 verbose addNamed multer@1.0.6
+38 silly addNamed semver.valid 1.0.6
+39 silly addNamed semver.validRange 1.0.6
+40 silly cache afterAdd multer@1.0.6
+41 verbose afterAdd /Users/dsutradhar/.npm/multer/1.0.6/package/package.json not in flight; writing
+42 verbose afterAdd /Users/dsutradhar/.npm/multer/1.0.6/package/package.json written
+43 verbose stack Error: ENOENT, open '/Applications/XAMPP/xamppfiles/htdocs/website/server/^0.1.8'
+44 verbose cwd /Applications/XAMPP/xamppfiles/htdocs/website/server
+45 error Darwin 13.1.0
+46 error argv "node" "/usr/local/bin/npm" "install" "multer" "^0.1.8" "--save"
+47 error node v0.10.13
+48 error npm  v2.3.0
+49 error path /Applications/XAMPP/xamppfiles/htdocs/website/server/^0.1.8
+50 error code ENOENT
+51 error errno 34
+52 error enoent ENOENT, open '/Applications/XAMPP/xamppfiles/htdocs/website/server/^0.1.8'
+52 error enoent This is most likely not a problem with npm itself
+52 error enoent and is related to npm not being able to find a file.
+53 verbose exit [ 34, true ]

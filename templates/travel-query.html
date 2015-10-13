@@ -1,0 +1,83 @@
+<div id="queryModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content" style="height: auto;">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title">Send Query</h4>
+            </div>
+            <div class="gap gap-small"></div>
+            <form class="form" role="form" accept-charset="UTF-8" id="login-nav">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Full Name:</label>
+                            <input type="text" placeholder="Full Name" ng-model="query.name" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Email Address:</label>
+                            <input type="text" placeholder="Email Address" ng-model="query.email" class="form-control">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Phone:</label>
+                            <input type="text" placeholder="Phone/Mobile" ng-model="query.phone" class="form-control">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Travel Date:</label>
+                        <input type="text" placeholder="Date" ng-model="query.date" class="form-control date">
+                    </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-6">        
+                        <div class="form-group">
+                            <label for="sel1">Adult Count:</label>
+                            <select class="form-control" ng-model="query.adult">
+                                <option>Choose an option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form-group">
+                            <label for="sel1">Child Count:</label>
+                            <select class="form-control" ng-model="query.child">
+                                <option>Choose an option</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="exampleInputPassword1">Message:</label>
+                            <textarea class="form-control" rows="5" ng-model="query.message"></textarea>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gap gap-small"></div>
+                <div class="row">
+                    <div class="col-md-10 col-md-offset-1">
+                        <button class="btn btn-primary btn-lg" data-dismiss="modal" type="submit" style="float:right;" ng-click="addQuery(query)">Submit</button>
+                    </div>
+                </div>
+            </form>
+            <div class="gap gap-small"></div>
+        </div>
+    </div>
+</div>
